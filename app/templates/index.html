@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Predict 2</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
+
+	<!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href={{ url_for('static', filename="/css/style.css")}} type="text/css">
+    <link rel="stylesheet" href={{ url_for('static', filename='/css/clash-display.css') }}  type="text/css">
+
+	<!-- JavaScript -->
+    <script src={{ url_for('static', filename='/js/jquery_3.6.0.min.js') }} ></script>
+    <script src={{ url_for('static', filename='/js/client_side.js') }} ></script>
+    <script src={{ url_for('static', filename='/js/bootstrap_3.4.1.min.js') }} ></script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src={{ url_for('static', filename="/images/1.png")}}>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/news">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/NewsDetection">NewsDetection</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero" class="min-vh-100 d-flex align-items-center text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 data-aos="fade-left" class="text-uppercase text-white fw-semibold display-1">Welcome to Predict
+                        2
+                    </h1>
+                    <h5 class="text-white mt-3 mb-4" data-aos="fade-right">WE ARE TEAM OF PREDICT 2 ORBIT FUTURE ACADEMY
+                    </h5>
+                    <div data-aos="fade-up" data-aos-delay="50">
+                        <a href="/NewsDetection" class="btn btn-brand me-2">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+
+    <!-- NEWS -->
+
+
+    <!-- ABOUT -->
+    <section id="about" class="min-vh-100 d-flex align-items-center text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold">Orbit Future Academy</h1>
+                        <div class="line"></div>
+                        <a class="navbar-brand" href="#">
+                            <img src={{ url_for('static', filename="/images/logo-1.png")}}>
+                        </a>
+                        <p style="text-align: center: inter-word;">
+                            <br>
+                            Orbit Future Academy didirikan dengan tujuan untuk meningkatkan kualitas hidup melalui inovasi, pendidikan, dan pelatihan keterampilan.
+                            Label atau brand Orbit merupakan kelanjutan dari warisan mendiang Dr Hasri Ainun Habibie dan Prof. Dr. Ing. B. J. Habibie, Presiden ke-3 Republik Indonesia. Mereka berdua telah menjadi penggerak dalam mendukung perkembangan inovasi dan teknologi pendidikan di Indonesia.
+                        </p>
+                    </div>
+                    </div>
+                    <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- TEAM -->
+    <section id="team" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold">Team Members</h1>
+                        <div class="line"></div>
+                        <p>When the pain of an obstacle is too great, challenge yourself to be stronger.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 text-center ">
+                <div class="col-md-4" data-aos="fade-down" data-aos-delay="150">
+                    <div class="team-member image-zoom">
+                        <div class="image-zoom-wrapper">
+                            <img src={{ url_for('static', filename="/images/Adit.png")}}>
+                        </div>
+                        <div class="team-member-content">
+                            <h4 class="text-white">Aditya Lingga Renandri</h4>
+                            <p class="mb-0 text-white">Universitas Singaperbangsa Karawang</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-down" data-aos-delay="250">
+                    <div class="team-member image-zoom">
+                        <div class="image-zoom-wrapper">
+                            <img src={{ url_for('static', filename="/images/Haykal.png")}}>
+                        </div>
+                        <div class="team-member-content">
+                            <h4 class="text-white">Muhammad Haykal Andana</h4>
+                            <p class="mb-0 text-white">Universitas Muhammadiyah Jakarta</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-down" data-aos-delay="350">
+                    <div class="team-member image-zoom">
+                        <div class="image-zoom-wrapper">
+                            <img src={{ url_for('static', filename="/images/Nopandi.png")}}>
+                        </div>
+                        <div class="team-member-content">
+                            <h4 class="text-white">Nopandi Ariyanto</h4>
+                            <p class="mb-0 text-white">Universitas Muhammadiyah Prof. Dr. Hamka</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row g-4 row justify-content-center align-items-center ">
+                <div class="col-md-4" data-aos="fade-down" data-aos-delay="150">
+                    <div class="team-member image-zoom">
+                        <div class="image-zoom-wrapper">
+                            <img src={{ url_for('static', filename="/images/Puteri.png")}}>
+                        </div>
+                        <div class="team-member-content">
+                            <h4 class="text-white">Puteri Nofianti Pratama</h4>
+                            <p class="mb-0 text-white">Universitas Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-down" data-aos-delay="250">
+                    <div class="team-member image-zoom">
+                        <div class="image-zoom-wrapper">
+                            <img src={{ url_for('static', filename="/images/Reva.png")}}>
+                        </div>
+                        <div class="team-member-content">
+                            <h4 class="text-white">Reva Amelia Rosana</h4>
+                            <p class="mb-0 text-white">Universitas Gunadarma</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-dark">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="#"><img src={{ url_for('static', filename="/images/Predict.png")}}></a>
+                        <div class="line"></div>
+                            <div class="social-icons">
+                            <a href="#"><i class="ri-twitter-fill"></i></a>
+                            <a href="#"><i class="ri-instagram-fill"></i></a>
+                            <a href="#"><i class="ri-github-fill"></i></a>
+                            <a href="#"><i class="ri-dribbble-fill"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6" style="margin-top:70px">
+                        <h5 class="mb-0 text-white">Location</h5>
+                        <div class="line"></div>
+                        <ul>
+                            <li>Jakarata, Indonesia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src={{ url_for('static', filename="/js/main.js")}}></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+<script>
+	var source = $('#source').attr('data-text');
+	var dest   = $('#dest');
+	function typeWriter(text, n) {
+	    if (n < (text.length)) {
+	        dest.html(text.substring(0, n+1));
+	        n++;
+	        setTimeout(function() {
+	            typeWriter(text, n)
+	        }, 150);
+		}
+	}
+
+	typeWriter(source, 0);
+
+	$SCRIPT_ROOT = "{{ url_for('newscheck') }}";
+	$(function() {
+		$('#submit').bind('click', function() {
+			var news = $('#news').val(); 
+			if(news === "" || news === " " || news === "\n" || news === null){
+		    	bootbox.alert({
+      			 	size: "big",
+    				title: "EMPTY FIELD",
+				    message: "Please enter some news!",
+				    backdrop: true
+				});
+	      	}
+	      	else{
+	      		$.getJSON($SCRIPT_ROOT, {
+		        	news: news,
+		      	}, function(data) {
+		      		if(data.result == "REAL"){
+		      			var src = "static/images/success.gif";
+		      		}
+		      		else{
+		      			var src = "static/images/fail.gif";
+		      		}
+		      		bootbox.alert({
+	      			 	size: "big",
+	    				title: "Prediction",
+					    message: "<div align='center'><h2>News is "+data.result+"</h2><img style='width:240px;height:232px;' src='"+src+"'/></div>",
+					    backdrop: true,
+					    callback: function(){ 
+					    	setTimeout(function(){
+							    //do what you need here
+							    location.reload();
+							}, 100);
+					    	 
+					    }
+					});
+		      	});
+	      	}
+	      	return false;
+	    });
+	});
+</script>
